@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
 		<item key="selection" value=""/>
+		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
 		</list>
 	</section>

@@ -1,0 +1,27 @@
+package br.com.senaisp.bauru.secao03.aula06;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		JOptionPane.showConfirmDialog(null, "Olá, participante, e bem-vindo ao programa de namoro favorito da América!",
+				"Bem-vindo, participante!", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
+
+		JOptionPane.showInputDialog(null, "Qual o seu nome?", "Questão 01", JOptionPane.QUESTION_MESSAGE, null, null,
+				"String");
+		// Solicitar para o usuário o "Seu time favorito". Deve selecionar de uma lista
+		// de times. Essa lista deve ter pelo menos 5 nomes. Sugestão: Corinthians, São
+		// Paulo, Santos, Noroeste, Palmeiras, Vasco, ...
+		
+		String[] acceptableValues = {"Corinthians", "São Paulo", "Palmeiras", "Vasco", "Santos"};
+        JOptionPane.showInputDialog(null,
+                "Qual seu time favorito?",
+                "Questão 02",
+                2,
+                null,
+                acceptableValues,
+                acceptableValues[1]);
+	}
+
+}

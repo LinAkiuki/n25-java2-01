@@ -1,0 +1,15 @@
+package br.com.senaisp.bauru.secao03.aula06;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		String input1 = (String) JOptionPane.showInputDialog(null, "Is this a question?", "Bem-vindo, participante!",
+				JOptionPane.INFORMATION_MESSAGE, // tipo de mensagem
+				null, // Ícone
+				null, // Opções de escolha
+				"Type something here."); // Opção Default
+	}
+
+}
