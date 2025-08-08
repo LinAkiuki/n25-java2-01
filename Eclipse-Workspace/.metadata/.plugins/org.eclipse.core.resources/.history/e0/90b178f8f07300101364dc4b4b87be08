@@ -1,0 +1,19 @@
+package br.com.senaisp.bauru.secao04.aula08;
+
+import javax.swing.JOptionPane;
+
+public class NameMaker {
+
+	public static void main(String[] args) {
+		// Solicitar o nome, nome do meio e sobrenome
+		JOptionPane.showInputDialog(null, "Qual o seu primeiro nome?", "Questão 01", JOptionPane.QUESTION_MESSAGE, null, null,
+				"String");
+		JOptionPane.showInputDialog(null, "Qual o seu segundo nome?", "Questão 02", JOptionPane.QUESTION_MESSAGE, null, null,
+				"String");
+		JOptionPane.showInputDialog(null, "Qual o seu último nome?", "Questão 03", JOptionPane.QUESTION_MESSAGE, null, null,
+				"String");
+		// Mostrar o nome completo ao término
+		JOptionPane.show
+	}
+
+}
