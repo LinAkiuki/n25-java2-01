@@ -11,6 +11,6 @@ public class NameMaker {
 		String sobrenome = JOptionPane.showInputDialog("Digite seu Sobrenome:");
 		// Mostrar o nome completo ao término
 		JOptionPane.showMessageDialog(null,
-				"Olá, " + primeiroNome + " " + segundoNome + " " + sobrenome + "! Tudo bem?");
+				"Olá, " + primeiroNome + " " + segundoNome + " " + sobrenome );
 	}
 }
