@@ -1,0 +1,18 @@
+package br.com.senaisp.bauru.secao04.aula010;
+
+public class CalculoBhaskara {
+	private double ladoA;
+	private double ladoB;
+	private double ladoC;
+	private double x1;
+	private double x2;
+
+	// Constructor
+	public CalculoBhaskara() {
+		ladoA = 0;
+		ladoB = 0;
+		ladoC = 0;
+		x1 = 0;
+		x2 = 0;
+	}
+}

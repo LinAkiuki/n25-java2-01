@@ -9,7 +9,6 @@ public class Forca {
 	private int erros;
 	// Número aleatório
 	private Random rnd;
-
 	// Constructor
 	public Forca() {
 		rnd = new Random();
@@ -28,15 +27,12 @@ public class Forca {
 		sc.close();
 		erros = 0;
 	}
-
 	public String getPalavraMascarada() {
 		return palavraMascarada;
 	}
-
 	public int getErros() {
 		return erros;
 	}
-
 	@Override
 	public String toString() {
 		String linha = " ┌───┐\n"+ // Linha 1
@@ -48,7 +44,28 @@ public class Forca {
 					   			(erros>=6 ? "\\" : " ") + "\n" + // Linha 4
 					   " │\n" + //linha 5
 					   "─┴─ " + getPalavraMascarada() + "\n"; //linha 6			
-				
-		return linha;
+	return linha;
+	}
+	public  void lancarLetra(char letra) {
+		if (palavraSecreta.contains(("" + letra).toLowerCase())) {
+			String apoio = "";
+			for (int i = 0; i < palavraSecreta.length(); i++) {
+				if (("" + letra).toLowerCase().equals(""+palavraSecreta.charAt(i))){
+					apoio += palavraSecreta.charAt(i);
+				} else {
+					apoio += palavraMascarada.charAt(i);
+				}
+			}
+			palavraMascarada = "" + apoio;
+		} else {
+			erros++; // Aumenta um no erro
+			System.out.println("A letra " + letra + " não está no texto!");
+		}
+	}
+	public boolean ehFimDeJogo() {
+		return erros>=6 || !palavraMascarada.contains("_");
+	}
+	public String getPalavraRevelada() {
+		return ehFimDeJogo() ? palavraSecreta : "";
 	}
 }
