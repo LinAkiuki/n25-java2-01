@@ -1,3 +1,2 @@
-2025/08/12-21:31:44.204 91cc Reusing MANIFEST C:\Users\Aluno\Documents\n25-java2-01\Eclipse-Workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/08/12-21:31:44.211 91cc Recovering log #3
-2025/08/12-21:31:44.213 91cc Reusing old log C:\Users\Aluno\Documents\n25-java2-01\Eclipse-Workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/08/13-19:03:21.480 78c Creating DB C:\Users\Aluno\Documents\n25-java2-01\Eclipse-Workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/08/13-19:03:21.497 78c Reusing MANIFEST C:\Users\Aluno\Documents\n25-java2-01\Eclipse-Workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001

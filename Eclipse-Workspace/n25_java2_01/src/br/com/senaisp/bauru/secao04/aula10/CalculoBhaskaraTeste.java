@@ -18,6 +18,8 @@ public class CalculoBhaskaraTeste {
 		// Mostrando x1 e x2
 		System.out.println("O valor de x1 = " + ca.getX1());
 		System.out.println("O valor de x2 = " + ca.getX2());
+		// Fechando o Scanner
+		sc.close();
 	}
 
 }
