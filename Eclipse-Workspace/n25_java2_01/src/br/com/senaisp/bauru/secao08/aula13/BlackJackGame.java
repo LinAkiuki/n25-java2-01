@@ -22,6 +22,7 @@ public class BlackJackGame {
 		// Sortear 2 cartas para a banca
 		banca.getCartas().add(bar.sortearCarta());
 		banca.getCartas().add(bar.sortearCarta());
+		banca.setParou(true);
 	}
 
 	public ArrayList<BlackJackPlayer> getPlayers() {
@@ -48,18 +49,27 @@ public class BlackJackGame {
 		}
 	}
 
+	public void solicitarParada(int play) {
+		if (play < players.size()) {
+			players.get(play).setParou(true);
+			// Checando se há vencedor
+			verificarFimJogo();
+		}
+	}
+
 	private void verificarFimJogo() {
 		boolean haVencedor = false;
 		boolean todosPararam = true;
 		int maiorCarta = 0;
 		for (BlackJackPlayer pl : players) {
-			todosPararam = todosPararam && pl.isParou();
 			if (pl.getTotalCarta() == 21) {
 				pl.setGanhador(true);
 				haVencedor = true;
 			} else if (pl.getTotalCarta() > 21) {
 				pl.setPerdedor(true);
 			}
+			// Verificando se todos pararam
+			todosPararam = todosPararam && (pl.isParou() || pl.isPerdedor());
 			if (pl.getTotalCarta() < 21 && pl.getTotalCarta() > maiorCarta) {
 				maiorCarta = pl.getTotalCarta();
 			}
