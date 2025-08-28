@@ -10,6 +10,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="produo"/>
 			<item value="bd"/>
 		</list>
 		<list key="replacehistory">
