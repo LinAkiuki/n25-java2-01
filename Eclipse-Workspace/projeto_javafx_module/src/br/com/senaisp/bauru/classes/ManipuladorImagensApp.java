@@ -60,7 +60,11 @@ public class ManipuladorImagensApp extends Application {
 			mp.stop();
 		});
 		// Adicionando o noRoot
-		noRoot.getChildren().addAll(mvw, btnPlay, btnPause, btnStop);
+		// Criando o Duke
+		Duke duk = new Duke();
+		duk.setLayoutX(20);
+		duk.setLayoutY(20);
+		noRoot.getChildren().addAll(mvw, btnPlay, btnPause, btnStop, duk);
 	}
 
 }
